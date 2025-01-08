@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart.js with Text Labels</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Chart with Custom Text Labels</h2>
+    <select id="years">
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+    </select>
+    <label for="days">How many days:</label>
+    <input type="number" name="days" id="days">
+    <button onclick="updateChart()">Show</button>
+    <canvas id="myChart" width="800" height="90"></canvas>
+
+    <button id="saveBtn">Save</button>
+    <script src="mainChart.js"></script>
+</body>
+</html>
